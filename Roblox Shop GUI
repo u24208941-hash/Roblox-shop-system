@@ -1,0 +1,29 @@
+A simple Roblox GUI setup that allows players to open and close a shop panel using a button.
+This is the base system for a future full shop with buying items and inventory.
+
+Current Script Functionality:
+Detects when the player clicks the ShopButton
+
+an example of the script to work:
+
+--//Variables
+local shop = script.Parent.ShopFrame 
+local open = script.Parent.Open 
+local exit = shop.Exit
+
+
+--//Open
+open.MouseButton1Click:Connect(function()
+	shop.Visible = true 
+	open.Visible = false 
+end)
+
+--//Close
+exit.MouseButton1Click:Connect(function()
+	shop.Visible = false
+	open.Visible = true
+end)
+
+Created by: Kingi5335
+Discord: cammee0320
+Hire me for scripting and development!
